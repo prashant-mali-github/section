@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b7693cce-a77e-463d-a494-536bf01ffafc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Sections.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Sections.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/migrations/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/migrations/alembic.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/migrations/env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/migrations/script.py.mako" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/models/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/models/db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/operations/serilizers.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/operations/serilizers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/operations/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/operations/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/operations/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/operations/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/rolesconfig/serilizers.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/rolesconfig/serilizers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/rolesconfig/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/rolesconfig/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/rolesconfig/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/rolesconfig/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/sections/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/sections/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/sections/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/sections/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Sections" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1XUTUKNDVKxlzmR59KQkYceoDdp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b7693cce-a77e-463d-a494-536bf01ffafc" name="Default Changelist" comment="" />
+      <created>1581099694575</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581099694575</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="495" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1581099941308">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="495" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1581099941308" />
+  </component>
+</project>
