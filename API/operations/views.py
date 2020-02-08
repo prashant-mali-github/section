@@ -55,7 +55,7 @@ class OperationResource(Resource):
         data = get_request_data(request)
         operation_data = data.get('operation', None)
         if not operation_data:
-            return {'message': 'No input data provided'}, 400
+            response_obj.data = json.dumps({'message': 'No input data provided'}), 400
 
         data, errors = operation_schema.load(operation_data)
         if errors:

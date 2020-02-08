@@ -43,7 +43,7 @@ class RoleConfigResource(Resource):
             if not role_config_id:
                 return {"err_msg": "role config id does not exit"}
             else:
-                result_obj = role_schema.dump(role_config_id).data
+                result_obj = role_config_schema.dump(role_config_id).data
                 return {'status': 'success', 'role_config': result_obj}, 200
         else:
             roles_configs = RoleConfig.query.all()

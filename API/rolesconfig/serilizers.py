@@ -42,8 +42,7 @@ class RolesConfigSchema(ma.Schema):
         required=True,
         validate=ValidationHelper.must_not_be_blank
     )
-    is_active = fields.Boolean( required=True,
-        validate=ValidationHelper.must_not_be_blank)
+    is_active = fields.Boolean()
 
-    # operation = fields.Nested(OperationSchema)
-    # role = fields.Nested(RolesSchema)
+    operation = fields.Nested(OperationSchema)
+    role = fields.Nested(RolesSchema)

@@ -1,0 +1,260 @@
+1. Sections -
+
+Get all section records.
+url - localhost:5000/api/sections/
+methods - GET
+Header - 
+    key             value    
+    content-type    application/json 
+
+Response body -
+{
+    "status": "success",
+    "sections": [
+        {
+            "section_description": "A section detail",
+            "is_active": true,
+            "section_title": "A section",
+            "section_id": 1
+        },
+        {
+            "section_description": "B section detail",
+            "is_active": false,
+            "section_title": "B section",
+            "section_id": 2
+        },
+        {
+            "section_description": "D section details",
+            "is_active": false,
+            "section_title": "D section",
+            "section_id": 3
+        }
+    ]
+}
+
+
+Get section record by section_id -
+url - localhost:5000/api/sections/
+methods - GET
+Header - 
+    key             value    
+    content-type    application/json 
+
+Response body -
+{
+    "status": "success",
+    "section": {
+        "section_description": "A section detail",
+        "is_active": true,
+        "section_title": "A section",
+        "section_id": 1
+    }
+}
+
+
+Add new section - 
+url - localhost:5000/api/sections/
+methods - POST
+Header - 
+    key             value    
+    content-type    application/json 
+
+Request body - 
+{
+	"section":
+	{
+		"section_title": "DP",
+		"section_description": "DP section details",
+		"is_active": true
+	}
+}
+
+Response body -
+{
+    "section_description": "DP section details",
+    "is_active": true,
+    "section_title": "DP",
+    "section_id": 5
+}
+
+
+Update existing section by section_id -
+
+url - localhost:5000/api/sections/5
+methods - PUT
+Header - 
+    key             value    
+    content-type    application/json 
+
+Resquest body - 
+{
+	"section":
+	{
+		"section_title": "DP",
+		"section_description": "DP section details",
+		"is_active": false
+	}
+}
+
+Response body -
+{
+    "Section": {
+        "section_description": "DP section details",
+        "is_active": false,
+        "section_title": "DP",
+        "section_id": 5
+    }
+}
+
+
+Remove section by section_id - 
+url - localhost:5000/api/sections/5
+methods - DELETE
+Header - 
+    key             value    
+    content-type    application/json 
+
+Response -
+{
+    "msg": "section deleted successfully"
+}
+
+
+2. Operation model test API doc.
+
+Get all operation details -
+url - localhost:5000/api/sections/5
+methods - DELETE
+Header - 
+    key             value    
+    content-type    application/json 
+
+Response body -
+{
+    "status": "success",
+    "operations": [
+        {
+            "section_id": 1,
+            "operation_id": 1,
+            "operation_description": "Basic operation details",
+            "operation_title": "basic operation",
+            "is_active": false
+        },
+        {
+            "section_id": 2,
+            "operation_id": 2,
+            "operation_description": "Advance operation details",
+            "operation_title": "Advance operation",
+            "is_active": true
+        },
+        {
+            "section_id": 1,
+            "operation_id": 3,
+            "operation_description": "Advance plus operation details",
+            "operation_title": "Advance plus operation",
+            "is_active": true
+        },
+        {
+            "section_id": 2,
+            "operation_id": 36,
+            "operation_description": "E section details",
+            "operation_title": "E",
+            "is_active": true
+        }
+    ]
+}
+
+
+Get operation detail by operation_id -
+url - localhost:5000/api/operations/3
+methods - GET
+Header - 
+    key             value    
+    content-type    application/json 
+
+Response body -
+{
+    "status": "success",
+    "operation": {
+        "section_id": 1,
+        "operation_id": 3,
+        "operation_description": "Advance plus operation details",
+        "operation_title": "Advance plus operation",
+        "is_active": true
+    }
+}
+
+
+Add new operation -
+
+url - localhost:5000/api/operations/
+methods - POST
+Header - 
+    key             value    
+    content-type    application/json 
+
+Request body -
+{
+	"operation":
+	{
+		"section_id": "2",
+		"operation_title": "G",
+		"operation_description": "G operations details",
+        "is_active": true
+	}
+}
+
+Response body -
+{
+    "status": "success",
+    "operation": {
+        "section_id": 2,
+        "is_active": true,
+        "operation_title": "G",
+        "operation_id": 37,
+        "operation_description": "G operations details"
+    }
+}
+
+
+Edit existing operation -
+url - localhost:5000/api/operations/37
+methods - PUT
+Header - 
+    key             value    
+    content-type    application/json 
+Request body -
+{
+	"operation":
+	{
+		"section_id": "2",
+		"operation_title": "G",
+		"operation_description": "G operations details",
+        "is_active": true
+	}
+}
+
+Response body -
+{
+    "Operation": {
+        "section_id": 2,
+        "is_active": false,
+        "operation_title": "G",
+        "operation_id": 37,
+        "operation_description": "G operations details"
+    }
+}
+
+Remove operation by operation_id -
+url - localhost:5000/api/operations/37
+methods - DELETE
+Header - 
+    key             value    
+    content-type    application/json 
+
+
+Response body -
+{
+    "msg": "operation deleted successfully"
+}
+

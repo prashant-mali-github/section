@@ -1,0 +1,321 @@
+
+
+
+1. Role model - 
+
+Gell all the roles data - 
+
+url - localhost:5000/api/roles/
+methods - GET
+Header - 
+    key             value    
+    content-type    application/json 
+
+Response body - 
+{
+    "status": "success",
+    "roles": [
+        {
+            "role_id": 1,
+            "role_description": "Python full satck developer",
+            "role_title": "Python Developer",
+            "is_active": false
+        },
+        {
+            "role_id": 2,
+            "role_description": "Java full satck developer",
+            "role_title": "Java Developer",
+            "is_active": true
+        },
+        {
+            "role_id": 4,
+            "role_description": "Go lang developer",
+            "role_title": "Go",
+            "is_active": false
+        }
+    ]
+}
+
+
+Get Specific rols data using role_id
+
+Url - localhost:5000/api/roles/4
+role_id = 4
+
+methods - GET
+Header - 
+key             value    
+    content-type    application/json 
+
+Response body - 
+{
+    "status": "success",
+    "role": {
+        "role_id": 4,
+        "role_description": "Go lang developer",
+        "role_title": "Go",
+        "is_active": false
+    }
+}
+
+Create new role 
+Url - localhost:5000/api/roles/
+
+methods - POST
+Header - 
+key             value    
+    content-type    application/json 
+
+Request body -
+{
+	"role":
+	{
+		"role_title": "D",
+		"role_description": "D lang developer",
+		"is_active": true
+	}
+}
+Response body - 
+{
+    "role_id": 6,
+    "role_description": "D lang developer",
+    "role_title": "D",
+    "is_active": true
+}
+
+Update existing role -
+Url - localhost:5000/api/roles/6
+
+methods - PUT
+Header - 
+key             value    
+    content-type    application/json 
+
+Request body -
+{
+    "role_id": 6,
+    "role_description": "D lang developer",
+    "role_title": "D",
+    "is_active": false
+}
+Response body -
+{
+    "Role": {
+        "role_id": 6,
+        "role_description": "D lang developer",
+        "role_title": "D",
+        "is_active": false
+    }
+}
+
+
+Delete role info - 
+Url - localhost:5000/api/roles/6
+
+methods - DELETE
+Header - 
+key             value    
+    content-type    application/json 
+
+Response body -
+{
+    "msg": "role deleted successfully"
+}
+
+
+2. Roles_Config model - 
+
+Get  all existing role_config details -
+Url - localhost:5000/api/rolesconfig/
+
+methods - GET
+Header - 
+key             value    
+    content-type    application/json 
+
+Response body -
+{
+    "status": "success",
+    "role_config": [
+        {
+            "operation": {
+                "section_id": 2,
+                "operation_id": 2,
+                "operation_description": "Advance operation details",
+                "operation_title": "Advance operation",
+                "is_active": true
+            },
+            "operation_id": 2,
+            "role_config_id": 2,
+            "role": {
+                "is_active": false,
+                "role_description": "Python full satck developer",
+                "role_title": "Python Developer",
+                "role_id": 1
+            },
+            "is_active": true,
+            "role_id": 1
+        },
+        {
+            "operation": {
+                "section_id": 2,
+                "operation_id": 2,
+                "operation_description": "Advance operation details",
+                "operation_title": "Advance operation",
+                "is_active": true
+            },
+            "operation_id": 2,
+            "role_config_id": 3,
+            "role": {
+                "is_active": false,
+                "role_description": "Python full satck developer",
+                "role_title": "Python Developer",
+                "role_id": 1
+            },
+            "is_active": false,
+            "role_id": 1
+        }
+    ]
+}
+
+Get specific role_config detail by role_config_id
+Url - localhost:5000/api/rolesconfig/2
+
+methods - GET
+Header - 
+key             value    
+    content-type    application/json 
+
+Response body -
+{
+    "status": "success",
+    "role_config": [
+        {
+            "is_active": true,
+            "operation": {
+                "is_active": true,
+                "operation_id": 2,
+                "section_id": 2,
+                "operation_description": "Advance operation details",
+                "operation_title": "Advance operation"
+            },
+            "operation_id": 2,
+            "role_id": 1,
+            "role_config_id": 2,
+            "role": {
+                "role_title": "Python Developer",
+                "is_active": false,
+                "role_id": 1,
+                "role_description": "Python full satck developer"
+            }
+        },
+        {
+            "is_active": true,
+            "operation": {
+                "is_active": true,
+                "operation_id": 2,
+                "section_id": 2,
+                "operation_description": "Advance operation details",
+                "operation_title": "Advance operation"
+            },
+            "operation_id": 2,
+            "role_id": 1,
+            "role_config_id": 3,
+            "role": {
+                "role_title": "Python Developer",
+                "is_active": false,
+                "role_id": 1,
+                "role_description": "Python full satck developer"
+            }
+        }
+    ]
+}
+
+Create new role_config record - 
+Url - localhost:5000/api/rolesconfig/
+
+methods - POST
+Header - 
+key             value    
+    content-type    application/json 
+
+Response body -
+{
+    "status": "success",
+    "Role_config": {
+        "is_active": true,
+        "operation": {
+            "is_active": true,
+            "operation_id": 2,
+            "section_id": 2,
+            "operation_description": "Advance operation details",
+            "operation_title": "Advance operation"
+        },
+        "operation_id": 2,
+        "role_id": 1,
+        "role_config_id": 3,
+        "role": {
+            "role_title": "Python Developer",
+            "is_active": false,
+            "role_id": 1,
+            "role_description": "Python full satck developer"
+        }
+    }
+}
+
+Update existing role_config model record -
+Url - localhost:5000/api/rolesconfig/
+
+methods - PUT
+Header - 
+key             value    
+    content-type    application/json 
+
+Request body - 
+{
+	"role_config":
+	{
+		"role_id": "1",
+		"operation_id": "2",
+		"is_active": false
+	}
+}
+
+Response body - 
+{
+    "Role_Config": {
+        "operation": {
+            "section_id": 2,
+            "operation_id": 2,
+            "operation_description": "Advance operation details",
+            "operation_title": "Advance operation",
+            "is_active": true
+        },
+        "operation_id": 2,
+        "role_config_id": 3,
+        "role": {
+            "is_active": false,
+            "role_description": "Python full satck developer",
+            "role_title": "Python Developer",
+            "role_id": 1
+        },
+        "is_active": false,
+        "role_id": 1
+    }
+}
+
+Remove Role_Config record by id -
+Update existing role_config model record -
+Url - localhost:5000/api/rolesconfig/3
+
+methods - DELETE
+Header - 
+key             value    
+    content-type    application/json 
+
+Response body -
+{
+    "msg":"role configuration deleted successfully"
+}
+
+
